@@ -1,1 +1,60 @@
 @import url(../node_modules/minireset.css/minireset.min.css);
+
+/* VARIABLES */
+
+:root {
+  --copy-h1: 2.986rem;
+  --copy-h2: 2.488rem;
+  --copy-h3: 2.074rem;
+  --copy-h4: 1.728rem;
+  --copy-h5: 1.44rem;
+  --copy-h6: 1.2rem;
+  --copy-p: 1rem;
+  --copy-sm: 0.833rem;
+  --copy-xs: 0.694rem;
+}
+
+/* TYPOGRAPHY */
+
+.copy-h1,
+.copy-h2,
+.copy-h3,
+.copy-h4,
+.copy-h5,
+.copy-h6 {
+  font-weight: bold;
+}
+
+.copy-p,
+.copy-sm,
+.copy-xs {
+  font-weight: normal;
+}
+
+.copy-h1 {
+  font-size: var(--copy-h1);
+}
+.copy-h2 {
+  font-size: var(--copy-h2);
+}
+.copy-h3 {
+  font-size: var(--copy-h3);
+}
+.copy-h4 {
+  font-size: var(--copy-h4);
+}
+.copy-h5 {
+  font-size: var(--copy-h5);
+}
+.copy-h6 {
+  font-size: var(--copy-h6);
+}
+.copy-p {
+  font-size: var(--copy-p);
+}
+.copy-sm {
+  font-size: var(--copy-sm);
+}
+.copy-xs {
+  font-size: var(--copy-xs);
+}
