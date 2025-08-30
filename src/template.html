@@ -7,21 +7,22 @@
   </head>
   <body>
     <div class="content-container">
+      <div class="hero-img"></div>
       <header class="nav-container">
         <nav class="nav">
-          <button class="copy-h5">Home</button>
-          <button class="copy-h5">Menu</button>
-          <button class="copy-h5">About</button>
+          <button class="text-style-h5 active">Home</button>
+          <button class="text-style-h5">Menu</button>
+          <button class="text-style-h5">About</button>
         </nav>
       </header>
       <div id="content">
         <!-- Homepage -->
         <section id="home" class="page">
-          <h1 class="copy-h1">Bloom & Brew Café</h1>
-          <p class="copy-p tagline">
+          <h1 class="text-style-h2">Bloom & Brew</h1>
+          <p class="text-style-p tagline">
             Coffee, community, and treats everyone can enjoy.
           </p>
-          <p class="copy-p intro">
+          <p class="text-style-p intro">
             Welcome to Bloom & Brew Café — where every cup of coffee comes with
             a side of comfort, and every pastry is baked with care. Whether
             you’re here for your morning pick-me-up, a sweet treat, or just a
@@ -31,8 +32,8 @@
 
         <!-- About Page -->
         <section id="about" class="page">
-          <h1 class="copy-h1">Our Story</h1>
-          <p class="copy-p">
+          <h1 class="text-style-h2">Our Story</h1>
+          <p class="text-style-p">
             Bloom & Brew Café started with one mom’s mission: to make birthday
             cakes her daughter could actually enjoy. After too many parties with
             desserts off-limits, the kitchen turned into a lab of
@@ -40,60 +41,130 @@
             asking for cakes too. And because coffee and cake are a perfect
             match, the bakery blossomed into a café.
           </p>
-          <p class="copy-p">
+          <p class="text-style-p">
             Today, Bloom & Brew is still family-run, still passionate about
             delicious food, and still committed to creating a place where
             everyone can share in the joy of a treat.
           </p>
 
           <div class="contact">
-            <p class="copy-p">
-              <strong>📍</strong> 123 Main Street, Anywhere, USA
+            <p class="text-style-p">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                class="feather feather-map-pin"
+              >
+                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                <circle cx="12" cy="10" r="3"></circle></svg
+              >&emsp;123 Main Street, Anywhere, USA
             </p>
-            <p class="copy-p"><strong>📞</strong> (555) 123-4567</p>
-            <p class="copy-p"><strong>✉️</strong> hello@bloomandbrew.com</p>
+            <p class="text-style-p">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                class="feather feather-phone"
+              >
+                <path
+                  d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"
+                ></path></svg
+              >&emsp;(555) 123-4567
+            </p>
+            <p class="text-style-p">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                class="feather feather-mail"
+              >
+                <path
+                  d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"
+                ></path>
+                <polyline points="22,6 12,13 2,6"></polyline></svg
+              >&emsp;hello@bloomandbrew.com
+            </p>
           </div>
         </section>
 
         <!-- Menu Page -->
         <section id="menu" class="page">
-          <h1 class="copy-h1">Menu</h1>
+          <h1 class="text-style-h2">Menu</h1>
 
-          <h2 class="copy-h4">Coffee & Drinks</h2>
-          <ul>
-            <li>
-              <strong>House Brew</strong> – Classic, smooth, and comforting.
+          <h2 class="text-style-h4 menu-section">Coffee & Drinks</h2>
+          <ul class="menu-list">
+            <li class="menu-item">
+              <strong class="name">House Brew</strong>
+              <span class="desc">Classic, smooth, and comforting.</span>
+              <span class="price">12oz $2.50 | 16oz $3.00</span>
             </li>
-            <li>
-              <strong>Vanilla Latte</strong> – Espresso + steamed milk + hint of
-              vanilla.
+            <li class="menu-item">
+              <strong class="name">Vanilla Latte</strong>
+              <span class="desc"
+                >Espresso + steamed milk + hint of vanilla.</span
+              >
+              <span class="price">12oz $3.75 | 16oz $4.25</span>
             </li>
-            <li>
-              <strong>Mocha Bliss</strong> – Espresso, chocolate, and cream.
+            <li class="menu-item">
+              <strong class="name">Mocha Bliss</strong>
+              <span class="desc">Espresso, chocolate, and cream.</span>
+              <span class="price">12oz $4.00 | 16oz $4.50</span>
             </li>
-            <li>
-              <strong>Iced Caramel Cold Brew</strong> – Sweet, bold, and
-              refreshing.
+            <li class="menu-item">
+              <strong class="name">Iced Caramel Cold Brew</strong>
+              <span class="desc">Sweet, bold, and refreshing.</span>
+              <span class="price">16oz $4.25 | 20oz $4.75</span>
             </li>
           </ul>
 
-          <h2 class="copy-h4">Baked Goods (Egg & Nut Free)</h2>
-          <ul>
-            <li>
-              <strong>Morning Glory Muffin</strong> – Cinnamon-spiced with
-              carrot and apple.
+          <h2 class="text-style-h4 menu-section">
+            Baked Goods (egg & nut free)
+          </h2>
+          <ul class="menu-list">
+            <li class="menu-item">
+              <strong class="name">Morning Glory Muffin</strong>
+              <span class="desc">Cinnamon-spiced with carrot and apple.</span>
+              <span class="price">$2.75 each</span>
             </li>
-            <li>
-              <strong>Chocolate Chip Cookie</strong> – Crispy edges, chewy
-              middle.
+            <li class="menu-item">
+              <strong class="name">Chocolate Chip Cookie</strong>
+              <span class="desc">Crispy edges, chewy middle.</span>
+              <span class="price">$1.75 each | 3 for $4.50</span>
             </li>
-            <li>
-              <strong>Blueberry Scone</strong> – Golden, buttery, with fresh
-              blueberries.
+            <li class="menu-item">
+              <strong class="name">Blueberry Scone</strong>
+              <span class="desc">Golden, buttery, with fresh blueberries.</span>
+              <span class="price">$3.25 each</span>
             </li>
-            <li>
-              <strong>Celebration Cupcake</strong> – Colorful sprinkle-topped
-              vanilla cake.
+            <li class="menu-item">
+              <strong class="name">Celebration Cupcake</strong>
+              <span class="desc">Colorful sprinkle-topped vanilla cake.</span>
+              <span class="price">$3.50 each | 6 for $18</span>
+            </li>
+            <li class="menu-item">
+              <strong class="name">Mini Loaf (Seasonal)</strong>
+              <span class="desc"
+                >Rotating flavors — pumpkin, lemon, or banana.</span
+              >
+              <span class="price">$5.00 each</span>
             </li>
           </ul>
         </section>
