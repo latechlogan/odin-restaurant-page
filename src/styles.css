@@ -1,3 +1,5 @@
+/* IMPORTS */
+
 @import url(../node_modules/minireset.css/minireset.min.css);
 
 /* VARIABLES */
@@ -16,12 +18,31 @@
 
 /* TYPOGRAPHY */
 
+html,
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+.copy-h1,
+.copy-h2,
+.copy-h3,
+.copy-h4,
+.copy-h5,
+.copy-h6,
+.copy-p,
+.copy-sm,
+.copy-xs {
+  line-height: 1.44;
+  margin: 1rem 0;
+}
+
 .copy-h1,
 .copy-h2,
 .copy-h3,
 .copy-h4,
 .copy-h5,
 .copy-h6 {
+  font-family: "Homemade Apple", sans-serif;
   font-weight: bold;
 }
 
@@ -57,4 +78,36 @@
 }
 .copy-xs {
   font-size: var(--copy-xs);
+}
+
+/* ELEMENTS */
+
+.content-container {
+  min-height: 100vh;
+  max-width: 1024px;
+  margin: 0 auto;
+  padding: clamp(1rem, 3vw, 2rem);
+
+  display: grid;
+  grid-template-rows: auto 1fr;
+}
+
+.nav > * {
+  font-family: "Poppins", sans-serif;
+}
+
+/* MEDIA QUERIES */
+
+@media (min-width: 768px) {
+  .content-container {
+    grid-template-columns: 200px 1fr;
+    grid-template-rows: 100vh;
+  }
+
+  .nav {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
 }

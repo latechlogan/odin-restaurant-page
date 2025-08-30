@@ -26,6 +26,8 @@
     "webpack-dev-server": "^5.2.2"
   },
   "dependencies": {
+    "@fontsource/homemade-apple": "^5.2.6",
+    "@fontsource/poppins": "^5.2.6",
     "minireset.css": "^0.0.7"
   }
 }
