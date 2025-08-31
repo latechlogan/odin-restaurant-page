@@ -21,7 +21,8 @@
 html,
 body {
   font-family: "Poppins", sans-serif;
-  line-height: 1.44;
+  line-height: 1.728;
+  color: #262626;
 }
 
 .text-style-h1,
@@ -87,8 +88,7 @@ body {
   padding: 1rem;
   margin: 0;
   background: url(./assets/images/wood-table-mini.jpg);
-  background-size: cover;
-  background-position: top left;
+  background-size: 100%;
   background-repeat: repeat-y;
 }
 
@@ -109,11 +109,11 @@ body {
 .content-container::before {
   position: absolute;
   content: "";
-  top: -25px;
+  top: -19px;
   right: 160px;
   z-index: 1000;
-  width: 120px;
-  height: 200px;
+  width: 90px;
+  height: 150px;
   background: url(./assets/images/paperclip-mini.png);
   background-size: contain;
   background-repeat: no-repeat;
@@ -126,12 +126,9 @@ body {
   padding: 1rem;
   margin: -6.5rem 0 2rem 0;
   background-color: #fff;
-  box-shadow: rgba(14, 63, 126, 0.04) 0px 0px 0px 1px,
-    rgba(42, 51, 69, 0.04) 0px 1px 1px -0.5px,
-    rgba(42, 51, 70, 0.04) 0px 3px 3px -1.5px,
-    rgba(42, 51, 70, 0.04) 0px 6px 6px -3px,
-    rgba(14, 63, 126, 0.04) 0px 12px 12px -6px,
-    rgba(14, 63, 126, 0.04) 0px 24px 24px -12px;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 0.0625em 0.0625em,
+    rgba(0, 0, 0, 0.25) 0px 0.125em 0.5em,
+    rgba(255, 255, 255, 0.1) 0px 0px 0px 1px inset;
   transform: rotate(4deg);
   border-radius: 0.25rem;
 }
@@ -148,10 +145,15 @@ body {
   background-position: center bottom;
 }
 
+.nav {
+  padding: 1rem 0;
+  border-bottom: 8px double #262626;
+}
+
 .nav button {
   font-family: "Poppins", sans-serif;
   padding: 0.5rem 1.5rem;
-  margin: 0.25rem 0;
+  margin: 0.25rem 0.5rem 0.25rem 0;
   background-color: #fff;
   border: none;
   border-radius: 0.25rem;
@@ -176,6 +178,10 @@ body {
   font-family: "Poppins", sans-serif;
 }
 
+.menu-section:first-of-type {
+  margin-top: 0;
+}
+
 .menu-list {
   width: 100%;
   display: grid;
@@ -188,7 +194,8 @@ body {
   padding: 2rem;
   margin: 0;
   border-radius: 0.5rem;
-  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+  box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px,
+    rgb(209, 213, 219) 0px 0px 0px 1px inset;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -197,7 +204,7 @@ body {
 
 .menu-item .name {
   font-size: var(--text-style-h6);
-  margin: 0 0 1rem 0;
+  margin: 0 0 0 0;
 }
 
 .menu-item .desc {

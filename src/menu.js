@@ -54,7 +54,7 @@ const food = [
 const section = createElement("section");
 
 const sectionHeader = createElement("h1", {
-  classes: "text-style-h2",
+  classes: "text-style-h1",
   content: "Menu",
 });
 

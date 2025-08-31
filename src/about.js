@@ -3,14 +3,14 @@ import { createElement, createSVG, createSVGElement } from "./utils";
 const section = createElement("section");
 
 const sectionHeader = createElement("h1", {
-  classes: "text-style-h2",
+  classes: "text-style-h1",
   content: "Our Story",
 });
 
 const sectionContentOne = createElement("p", {
   classes: "text-style-p",
   content:
-    "Bloom & Brew Café started with one mom’s mission: to make birthday cakes her daughter could actually enjoy. After too many parties with desserts off-limits, the kitchen turned into a lab of allergen-friendly experiments. Soon, friends and neighbors were asking for cakes too. And because coffee and cake are a perfect match, the bakery blossomed into a café.",
+    "Bloom & Brew started with one mom’s mission: to make birthday cakes her daughter could actually enjoy. After too many parties with desserts off-limits, the kitchen turned into a lab of allergen-friendly experiments. Soon, friends and neighbors were asking for cakes too. And because coffee and cake are a perfect match, the bakery blossomed into a café.",
 });
 
 const sectionContentTwo = createElement("p", {
